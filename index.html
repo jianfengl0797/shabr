@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,10 +29,24 @@ $(document).ready(function(){
     }
     .bgs{
         background-color: #FFFF99;
-        margin: 15px;
+        margin: 3%;
     }
     .p-space{
         margin: 5px;
+    }
+    .ind{
+        background-color: green;
+    }
+    .contact{
+        padding: 1px;
+        margin: 1px;
+    }
+    h3{
+        color: blue;
+        font-family: Indie Flower;
+    }
+    h2{
+        color: #0000FF;
     }
    h1{
        color: Orange;
@@ -43,12 +58,10 @@ $(document).ready(function(){
        padding: 20px;
        font-family: Helvetica, sans-serif;;
    }
+   img{
+       border-radius: 20px;
+   }
     </style>
-
-
-
-
-
   <head>
       <meta charset="UTF-8">
     <title>title</title>
@@ -72,12 +85,37 @@ $(document).ready(function(){
     <li>Fun for both adult and kids. All are welcome!</li><br>
     <li>Afraid of heights? You won't be after you slow dance with the sky.</li><br>
     </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="nav nav-tabs nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Cough</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Fever</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Tiredness</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Shortness of Breath</a>
+  </li>
+</ul>
+  </div>
+</nav>
 </div>
 
 
 
+
+
 <div class="bgs text-center">
-    <h2>Information Page</h2>
+    <h2>Info</h2>
+    <h3>All the information you'll need</h3>
     <div class="container-fluid">
         <div class="row">
     <div class="card-body col-sm-6">
@@ -135,5 +173,69 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
+
+
+
+<div class="bgs text-center">
+    <h2>Testimonials</h2>
+    <h3>Just a few of our happy customers</h3>
+        <div class="container-fluid">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
+                 <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
+    </div>
+    <div class="carousel-item">
+      <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
+    </div>
+    <div class="carousel-item">
+      <p>"Thanks so much for making our experience so perfect. I definitely want to go back again! -- Linda T.</p>
+    </div>
+    <div class="carousel-item">
+      <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
+    </div>
+    <div class="carousel-item">
+      <p>"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!" -- Ethel E.</p>
+    </div>
+    <div class="carousel-item">
+      <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
+    </div>
+  </div>
+</div>
+        </div>
+</div>
+
+
+
+<div class="bgs text-center" >
+    <h2>Contact</h2>
+    <h3>We’d love to hear from you</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h5>Address</h5>
+                    <div>
+                    <p style="padding: 2px;">SHABR, Inc.</p>
+                     <p style="padding: 2px;">1234 Shabr Road</p>
+                      <p style="padding: 2px;">Somewhere, OT 80013</p>
+                      </div>
+                </div>
+                <div class="col-6">
+                    <h5>Phone</h5>
+                    <p style="padding: 2px;">(555) 555-1234</p>
+                </div>
+            </div>
+    </div>
+</div>
+
   </body>
 </html>
