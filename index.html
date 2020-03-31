@@ -1,29 +1,139 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>Hello, world!</title>
-    
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+
+
     <style>
-      
+    body {
+ background-image: url('https://brookfarm.com/wp-content/uploads/2018/03/BerkshiresHotAirBalloonRide.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+    }
+    .bg{
+        background-color: #FFB266;
+        margin: 15px;
+    }
+    .bgs{
+        background-color: #FFFF99;
+        margin: 15px;
+    }
+    .p-space{
+        margin: 5px;
+    }
+   h1{
+       color: Orange;
+       padding: 50px;
+       font-family: gotu;
+       font-size: 75px;
+   }
+   p{
+       padding: 20px;
+       font-family: Helvetica, sans-serif;;
+   }
     </style>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+  <head>
+      <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+
+
+
+
+
+  <body>
+<div class=" text-center">
+    <i><h1>Skydance Hot Air Balloon Rides</h1></i>
+    <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" title="Ride with the wind" data-content="Dance with the Sky">Click me</button>
+</div>
+<div class="bg">
+    <h2 class="text-center">Home</h2>
+    <h3 class="text-center">Fun For Everyone!</h3>
+    <ul>
+    <li>Come make a new memory with us. There's nothing else like it.</li><br>
+    <li>Fun for both adult and kids. All are welcome!</li><br>
+    <li>Afraid of heights? You won't be after you slow dance with the sky.</li><br>
+    </ul>
+</div>
+
+
+
+<div class="bgs text-center">
+    <h2>Information Page</h2>
+    <div class="container-fluid">
+        <div class="row">
+    <div class="card-body col-sm-6">
+    <nav class="nav flex-column">
+  <h4 class="card-title text-center">Time</h4>
+  <p class="card-text">Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</p>
+</nav>
+</div>
+<div class="card-body col-sm-6">
+    <nav class="nav flex-column">
+  <h4 class="card-title text-center">Weather</h4>
+  <p class="card-text">High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will allow their balloon flight.</p>
+    </nav>
+        </div>
+        <div class="card-body col-sm-6">
+    <nav class="nav flex-column">
+  <h4 class="card-title text-center">Flight</h4>
+  <p class="card-text">Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.</p>
+    </nav>
+        </div>
+        <div class="card-body col-sm-6">
+    <nav class="nav flex-column">
+  <h4 class="card-title text-center">Participation</h4>
+  <p class="card-text">We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the fun of the entire ballooning experience.</p>
+    </nav>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="bgs text-center">
+    <h2>Gallery</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-1.jpg" height="90%" width="90%">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-2.jpg" height="90%" width="90%">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-3.jpg" height="90%" width="90%">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-4.jpg" height="90%" width="90%">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-5.jpg" height="90%" width="90%">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <img src="img/balloon-6.jpg" height="90%" width="90%">
+                </div>
+        </div>
+    </div>
+</div>
   </body>
 </html>
