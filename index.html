@@ -24,7 +24,7 @@ $(document).ready(function(){
    background-size: cover;
     }
     .bg{
-        background-color: #FFB266;
+        background-color: #FFFFFF;
         margin: 15px;
     }
     .bgs{
@@ -72,10 +72,10 @@ $(document).ready(function(){
 
 
 
-  <body>
+  <body class="img-fluid" alt="Responsive image">
 <div class=" text-center">
     <i><h1>Skydance Hot Air Balloon Rides</h1></i>
-    <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" title="Ride with the wind" data-content="Dance with the Sky">Click me</button>
+    <button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" title="'Ride with the wind" data-content="Dance with the Sky'">Our Catch Phrase</button>
 </div>
 <div class="bg">
     <h2 class="text-center">Home</h2>
@@ -86,34 +86,34 @@ $(document).ready(function(){
     <li>Afraid of heights? You won't be after you slow dance with the sky.</li><br>
     </ul>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="nav nav-tabs nav-fill">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link" href="#">Cough</a>
+    <a class="nav-link col-lg-3" href="#info">Info</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Fever</a>
+    <a class="nav-link col-lg-3" href="#gallery">Gallery</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Tiredness</a>
+    <a class="nav-link col-lg-3" href="#testimonials">Testimonials</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Shortness of Breath</a>
+    <a class="nav-link col-lg-3" href="#contact">Contact</a>
   </li>
 </ul>
-  </div>
+</div>
 </nav>
+
 </div>
 
 
 
 
-
-<div class="bgs text-center">
+<div class="bgs text-center" id="info">
     <h2>Info</h2>
     <h3>All the information you'll need</h3>
     <div class="container-fluid">
@@ -148,7 +148,7 @@ $(document).ready(function(){
 
 
 
-<div class="bgs text-center">
+<div class="bgs text-center" id="gallery">
     <h2>Gallery</h2>
         <div class="container-fluid">
             <div class="row">
@@ -176,47 +176,57 @@ $(document).ready(function(){
 
 
 
-<div class="bgs text-center">
+<div class="bgs text-center" id="testimonials">
     <h2>Testimonials</h2>
     <h3>Just a few of our happy customers</h3>
         <div class="container-fluid">
 
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
-                 <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind"></li>
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
+  <div >
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+      <div class="carousel-item active">
+    <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
     </div>
     <div class="carousel-item">
-      <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
+    <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
     </div>
     <div class="carousel-item">
-      <p>"Thanks so much for making our experience so perfect. I definitely want to go back again! -- Linda T.</p>
+    <p>"Thanks so much for making our experience so perfect. I definitely want to go back again! -- Linda T.</p>
     </div>
     <div class="carousel-item">
-      <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
+    <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
     </div>
     <div class="carousel-item">
-      <p>"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!" -- Ethel E.</p>
+    <p>"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!" -- Ethel E.</p>
     </div>
     <div class="carousel-item">
-      <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
+    <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
         </div>
 </div>
 
 
 
-<div class="bgs text-center" >
+<div class="bgs text-center" id="contact">
     <h2>Contact</h2>
     <h3>We’d love to hear from you</h3>
         <div class="container-fluid">
@@ -239,3 +249,13 @@ $(document).ready(function(){
 
   </body>
 </html>
+
+
+<!--
+carousal
+card
+navbar
+button / popover
+color?
+
+-->
