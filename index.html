@@ -61,6 +61,11 @@ $(document).ready(function(){
    img{
        border-radius: 20px;
    }
+    @media (max-width: 400px) {
+    a {
+        font-size: 25px;
+    }
+  }
     </style>
   <head>
       <meta charset="UTF-8">
@@ -231,22 +236,32 @@ $(document).ready(function(){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6">
-                    <h5>Address</h5>
-                    <div>
-                    <p style="padding: 2px;">SHABR, Inc.</p>
-                     <p style="padding: 2px;">1234 Shabr Road</p>
-                      <p style="padding: 2px;">Somewhere, OT 80013</p>
-                      </div>
+                    <div class="dropdown">
+  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-placement="down" aria-haspopup="true" aria-expanded="false">
+    Address
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">SHABR, Inc.</a>
+    <a class="dropdown-item" href="#">1234 Shabr Road</a>
+    <a class="dropdown-item" href="#">Somewhere, OT 80013</a>
+  </div>
+</div>
                 </div>
                 <div class="col-6">
-                    <h5>Phone</h5>
-                    <p style="padding: 2px;">(555) 555-1234</p>
+                    <div class="dropdown">
+  <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-placement="down" aria-haspopup="true" aria-expanded="false">
+    Phone
+  </button><br><br><br><br><br><br><br>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">(555) 555-1234</a>
+  </div>
+</div>
                 </div>
             </div>
     </div>
 </div>
 
-<b><p style="padding: 1px !important; color: red;" class="text-center fixed-bottom">Copyright © 2016   |   SHABR</p></b>
+<p style="padding: 0px !important; margin: 0px !important; color: red; background: white; font-family: Courier New" class="text-center fixed-bottom">Copyright © 2016   |   SHABR</p>
 
   </body>
 </html>
